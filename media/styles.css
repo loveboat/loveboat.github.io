@@ -3,7 +3,7 @@ body {
 }
 
 body {
-  font-family: 'Helvetica', Sans-Serif;
+  font-family: 'Comfortaa', cursive;
   background-image: url('/media/ahoy-there.gif');
   background-size: 105%;
   background-repeat: no-repeat;
@@ -11,8 +11,7 @@ body {
 }
 
 body > h1 {
-  font-family: Helvetica;
-  font-size: 18vw;
+  font-size: 21vw;
   color: white;
   margin: 0;
 }
