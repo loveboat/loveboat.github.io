@@ -6,27 +6,48 @@ body {
 
 .wrapper {
   min-height: 100%;
-  font-family: 'Comfortaa', sans-serif;
-  background-image: url('/media/ahoy-there.gif');
-  background-size: cover;
-  background-position: -11px 0px;
-}
-
-@media (max-width: 900px) {
-  .wrapper {
-    background-position: -50px 0px;
-  }
-}
-
-@media (max-width: 480px) {
-  .wrapper {
-    background-position: -190px 0px;
-  }
+  font-family: Comfortaa, sans-serif;
 }
 
 .wrapper > h1 {
-  padding-left: 10px;
+  position: fixed;
+  top: 5px;
+  left: 10px;
   font-size: 21vw;
   color: white;
   margin: 0;
+  z-index: 1;
+}
+
+.wrapper > video {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+@media (min-width: 640px) {
+  .wrapper > video {
+    left: -150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper > video {
+    left: -100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper > video {
+    left: -50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper > video {
+    left: 0;
+  }
 }
