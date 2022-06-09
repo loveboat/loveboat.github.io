@@ -29,8 +29,8 @@ body {
 
 .wrapper > h1 {
   position: fixed;
-  top: 5px;
-  left: 10px;
+  top: 1.8vw;
+  left: 2vw;
   font-size: 21vw;
   color: white;
   margin: 0;
