@@ -23,52 +23,50 @@ body {
 }
 
 .wrapper {
-  min-height: 100%;
+  position: relative;
   font-family: Comfortaa, sans-serif;
+  height: 100%;
 }
 
 .wrapper > h1 {
-  position: fixed;
+  position: absolute;
   top: 1.8vw;
   left: 2vw;
   font-size: 21vw;
   color: white;
   margin: 0;
-  z-index: 1;
 }
 
 .wrapper > video {
-  position: fixed;
-  top: 0;
-  left: -200px;
-  min-width: 100%;
+  display: block;
+  object-position: -180px;
   min-height: 100%;
-  z-index: 0;
 }
 
 @media (min-width: 640px) {
   .wrapper > video {
-    left: -150px;
+    object-position: -150px;
     min-width: calc(100% + 150px);
   }
 }
 
 @media (min-width: 768px) {
   .wrapper > video {
-    left: -100px;
+    object-position: -100px;
     min-width: calc(100% + 100px);
   }
 }
 
 @media (min-width: 1024px) {
   .wrapper > video {
-    left: -50px;
+    object-position: -50px;
     min-width: calc(100% + 50px);
   }
 }
 
 @media (min-width: 1280px) {
   .wrapper > video {
-    left: 0;
+    object-position: 0;
+    min-width: 100%;
   }
 }
