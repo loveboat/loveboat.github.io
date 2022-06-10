@@ -23,50 +23,52 @@ body {
 }
 
 .wrapper {
-  position: relative;
+  min-height: 100%;
   font-family: Comfortaa, sans-serif;
-  height: 100%;
 }
 
 .wrapper > h1 {
-  position: absolute;
+  position: fixed;
   top: 1.8vw;
   left: 2vw;
   font-size: 21vw;
   color: white;
   margin: 0;
+  z-index: 1;
 }
 
 .wrapper > video {
-  display: block;
-  object-position: -180px;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  min-width: 100%;
   min-height: 100%;
+  z-index: 0;
 }
 
 @media (min-width: 640px) {
   .wrapper > video {
-    object-position: -150px;
+    left: -150px;
     min-width: calc(100% + 150px);
   }
 }
 
 @media (min-width: 768px) {
   .wrapper > video {
-    object-position: -100px;
+    left: -100px;
     min-width: calc(100% + 100px);
   }
 }
 
 @media (min-width: 1024px) {
   .wrapper > video {
-    object-position: -50px;
+    left: -50px;
     min-width: calc(100% + 50px);
   }
 }
 
 @media (min-width: 1280px) {
   .wrapper > video {
-    object-position: 0;
-    min-width: 100%;
+    left: 0;
   }
 }
