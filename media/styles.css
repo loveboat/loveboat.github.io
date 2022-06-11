@@ -38,14 +38,12 @@ body {
   font-size: 21vw;
   color: white;
   margin: 0;
-  z-index: 1;
 }
 
 .wrapper > video {
   display: block;
   object-fit: cover;
   height: max(100vh, calc(0.6 * 100vw));
-
   width: calc(100% + 200px);
   object-position: -200px;
 }
