@@ -43,7 +43,7 @@ body {
 .wrapper > video {
   display: block;
   object-fit: cover;
-  height: max(100vh, calc(0.6 * 100vw));
+  height: max(100vh, calc(0.75 * 100vw));
   width: calc(100% + 200px);
   object-position: -200px;
 }
